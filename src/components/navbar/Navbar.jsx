@@ -44,9 +44,11 @@ function Navbar() {
         Lamamia
       </Link>
       <div className={styles.links}>
-        <DarkModeToggle/>
+        <DarkModeToggle />
         {links.map((link) => (
-          <Link href={link.url}>{link.title}</Link>
+          <Link key={link.id} href={link.url}>
+            {link.title}
+          </Link>
         ))}
         <button className={styles.logout}>Logout</button>
       </div>

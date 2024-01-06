@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 function Dashboard() {
@@ -25,7 +26,9 @@ function Dashboard() {
         }}
       >
         მეორე
-      </button>
+      </button> <br />
+      <Link href="/dashboard/crud">CRUD</Link> 
+      <Link href="/dashboard/posts">Posts</Link>
     </div>
   );
 }

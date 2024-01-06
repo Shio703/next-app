@@ -6,7 +6,7 @@ import Image from "next/image";
 function Contact() {
   return (
     <div>
-      <h1 className={styles.title}>Let's Keep in Touch</h1>
+      <h1 className={styles.title}>{"Let's Keep in Touch"}</h1>
       <div className={styles.mainWrapper}>
         <div className={styles.imgContainer}>
           <Image

@@ -21,7 +21,11 @@ async function Blog() {
   return (
     <div className={styles.mainContainer}>
       {data.map((blog) => (
-        <Link href={`/blog/${blog.id}`} className={styles.container}>
+        <Link
+          key={blog.id}
+          href={`/blog/${blog.id}`}
+          className={styles.container}
+        >
           <div className={styles.imageContainer}>
             <Image
               src={blog.images[0]}
